@@ -95,9 +95,9 @@
     <!-- *** 1. ADDED: Hidden Audio Player *** -->
     <audio id="bg-music" loop preload="auto">
         <!-- 
-             !!! IMPORTANT: REPLACE 'YOUR_PUBLIC_AUDIO_URL_HERE' with the direct link to your MP3/WAV file !!!
+             !!! IMPORTANT: THIS PATH MUST BE CORRECT ON GITHUB !!!
         -->
-        <source src="YOUR_PUBLIC_AUDIO_URL_HERE" type="audio/mp3">
+        <source src="C:\Users\Glen Leslie\Desktop\Princess birthday surprise\assets\grover-washington-jr-just-the-two-of-us-slowed-reverb-128-ytshorts.savetube.me.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
     
@@ -151,14 +151,11 @@
                      Use <br> for line breaks!
                 -->
                 <p class="whitespace-pre-wrap leading-relaxed elegant-font">
-                    My Dearest Princess,<br><br>
-
+                    My Dearest Princess,
                     Today is all about celebrating the amazing person you are and the achievements you have attained through this hole journey.From the time you came into this world as an angel,”CRYING😭” to now where you are chasing never ending goals,you have demonstrated soo much discipline and determination.Yes I know sometimes when things get tough we tend to sulk and wish we were never here but the most amazing part about you is that you always go to God during those hard times and ultimately emerge victorious.Your presence brightens up the room,your smile steals peoples breaths”KASONGO👀😂”,your voice fills hearts with warmth,especially mine💖.As we celebrate your day,I want to remind you that you always have people by your side who will always push you through the tough times.We are soo proud of you,and we will always pray for your success and victory.
                     Now speaking as your Sweetheart,I am soo proud of you Princess for the far that you have come.The endless times e have shared things and built each other is more than magical.I want you to enjoy this day to the fullest knowing that you are loved from within and also miles away.Always remember that nomatter what we will always pray through and have victory on our side.
-                    <br><br>
-
-                    HAVE A WONDERFUL BIRTHDAY LOVE,I LOVE YOU SOO MUCH💘💞,<br>
-
+            
+                    HAVE A WONDERFUL BIRTHDAY LOVE,I LOVE YOU SOO MUCH💘💞,
                    Glen Leslie
                 </p>
             </div>
@@ -182,14 +179,13 @@
             <p class="text-pink-200 mb-4">A look back at our first memories together.</p>
             
             <!-- 
-                 *** IMPORTANT: REPLACE THE 'src' URL BELOW WITH YOUR ACTUAL SLIDESHOW VIDEO LINK (Video 1) ***
-                 NOTE: Local file paths like 'C:\Users\...' will NOT work when hosted online. Please use a public embed link (YouTube, Vimeo, etc.)
+                 *** FILE PATH CORRECTED: Must be hosted in ./assets/ folder on GitHub ***
             -->
             <div class="aspect-video w-full mb-8 rounded-lg overflow-hidden shadow-xl border-2 border-pink-500">
                 <iframe 
                     width="100%" 
                     height="100%" 
-                    src="C:\Users\Glen Leslie\Desktop\Princess birthday surprise\WhatsApp Video 2025-12-16 at 10.23.07 PM.mp4" 
+                    src="C:\Users\Glen Leslie\Desktop\Princess birthday surprise\assets\WhatsApp Video 2025-12-16 at 10.23.07 PM.mp4"
                     title="Our Slideshow Video" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -214,509 +210,16 @@
         <div id="stage-memory-video-2" class="stage hidden">
             <h1 class="text-4xl sm:text-5xl mb-6 text-white elegant-font">More Moments</h1>
             
-            <p class="text-pink-200 mb-4">Special message from Sweetheart...</p><!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>A Special Birthday & Relationship Proposal</title>
-                
-                <script src="https://cdn.tailwindcss.com"></script>
-                <!-- Removed Tone.js. Using native HTML audio for a pre-made track. -->
-                <style>
-                    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-                    body {
-                        font-family: 'Inter', sans-serif;
-                        background-color: #1a0d1a; /* Dark romantic purple/red background */
-                        overflow: hidden; 
-                    }
-                    .elegant-font {
-                        font-family: 'Playfair Display', serif;
-                    }
-                    .gradient-text {
-                        background-image: linear-gradient(to right, #f97316, #fca5a5); /* Orange to pink gradient */
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        background-clip: text;
-                        color: transparent;
-                    }
-            
-                    /* --- Falling Elements Animation Setup --- */
-                    .falling-element {
-                        position: absolute;
-                        top: -10%;
-                        animation: fall linear infinite;
-                        pointer-events: none;
-                        z-index: 10;
-                    }
-                    @keyframes fall {
-                        to {
-                            transform: translateY(105vh) rotate(360deg);
-                        }
-                    }
-                    /* Hide falling elements when they are not needed (e.g., on the cover page) */
-                    #falling-container.hidden-animation .falling-element {
-                        display: none;
-                    }
-            
-                    /* --- Custom Burnt Paper Aesthetic --- */
-                    .burnt-paper {
-                        background-color: #fcf9e7; /* Old parchment color */
-                        color: #4b3621; /* Dark brown text color */
-                        border: 5px solid #3d2b1f; /* Dark border simulates burnt edge */
-                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px 5px #7a3e3e; /* Shadow/burnt effect */
-                        padding: 2rem;
-                        line-height: 1.6;
-                        
-                        /* MODIFIED: Increased width for a wider letter appearance */
-                        max-width: 600px; 
-                        /* MODIFIED: max-height and overflow-y: auto REMOVED to show the entire letter */
-                        
-                        width: 90%; 
-                        margin-left: auto;
-                        margin-right: auto;
-                    }
-            
-                    /* --- Rose Emergence Animation --- */
-                    #rose-transition {
-                        position: fixed;
-                        bottom: -100%;
-                        left: 0;
-                        right: 0;
-                        height: 100vh;
-                        background-color: #1a0d1a;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        z-index: 50;
-                        transition: bottom 2s ease-out; 
-                    }
-                    #rose-transition.active {
-                        bottom: 0; 
-                    }
-                    .rose-icon {
-                        font-size: 8rem;
-                        color: #e30b5d; 
-                        text-shadow: 0 0 20px rgba(227, 11, 93, 0.8);
-                        animation: pulse 1.5s infinite alternate;
-                    }
-                    @keyframes pulse {
-                        from { transform: scale(1); }
-                        to { transform: scale(1.1); }
-                    }
-                </style>
-            </head>
-            <body class="min-h-screen flex items-center justify-center p-4">
-            
-                <!-- *** 1. ADDED: Hidden Audio Player *** -->
-                <audio id="bg-music" loop preload="auto">
-                    <!-- 
-                         !!! IMPORTANT: PLACE YOUR AUDIO FILE IN THE GITHUB REPOSITORY'S 'assets' FOLDER !!!
-                         Then replace 'YOUR_PUBLIC_AUDIO_URL_HERE' with the relative path: './assets/your-audio-file.mp3'
-                    -->
-                    <source src="./assets/background_music.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-                
-                <!-- Container for falling elements (z-index 10) -->
-                <div id="falling-container" class="fixed inset-0 w-full h-full z-0 hidden-animation"></div>
-            
-                <!-- Rose Transition Overlay (z-index 50) -->
-                <div id="rose-transition">
-                    <div class="text-center">
-                        <p class="rose-icon">🌹</p>
-                        <p class="text-2xl text-pink-300 elegant-font mt-4">Preparing the surprise...</p>
-                    </div>
-                </div>
-            
-                <!-- Main Container (z-index 20) -->
-                <!-- max-w-4xl retained for large video size, but letter width is controlled by burnt-paper class -->
-                <div id="app" class="bg-pink-900/40 backdrop-blur-sm border border-pink-700/50 shadow-2xl shadow-pink-900/80 p-6 sm:p-10 rounded-3xl w-full max-w-4xl mx-auto text-center transition-all duration-1000 ease-in-out transform scale-100 z-20 relative">
-            
-                    <!-- STAGE 1: Painting Website Cover (NO HEARTS/FLOWERS) -->
-                    <div id="stage-painting" class="stage">
-                        <h1 class="text-4xl sm:text-5xl mb-4 text-white elegant-font">Artisan Canvas</h1>
-                        <p class="text-pink-300 text-lg mb-6">Create Your Masterpiece. Join Our Community.</p>
-                        
-                        <div class="bg-pink-900/60 p-6 rounded-xl my-8 mx-auto w-11/12 border border-pink-500/50">
-                            <p class="text-white text-4xl mb-2">🎨</p>
-                            <p class="text-pink-200 text-lg">Sign Up to Explore Your Creative Side!</p>
-                        </div>
-                        
-                        <form id="signup-form" onsubmit="event.preventDefault(); triggerRoseTransition()">
-                            <input type="email" placeholder="Email Address" 
-                                   class="w-full p-3 mb-4 text-gray-900 bg-white border-2 border-pink-500 rounded-lg focus:outline-none focus:ring-4 focus:ring-pink-500/70" required>
-                            <input type="password" placeholder="Password" 
-                                   class="w-full p-3 mb-4 text-gray-900 bg-white border-2 border-pink-500 rounded-lg focus:outline-none focus:ring-4 focus:ring-500/70" required>
-                            
-                            <button type="submit" 
-                                    class="w-full bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 rounded-lg transition duration-300 transform hover:scale-[1.01] shadow-xl shadow-pink-900/50">
-                                Sign Up!
-                            </button>
-                        </form>
-                    </div>
-            
-                    <!-- STAGE 2: Birthday Letter (Burnt Aesthetic Sheet) -->
-                    <div id="stage-birthday-letter" class="stage hidden">
-                        <h1 class="text-4xl sm:text-5xl mb-6 text-white elegant-font">Happy Birthday, My Love!</h1>
-                        
-                        <div class="burnt-paper rounded-xl mb-8 shadow-2xl text-left">
-                            <h2 class="text-3xl elegant-font mb-4 text-center border-b border-gray-600 pb-2">A Secret Note</h2>
-                            
-                            <!-- 
-                                 *** IMPORTANT: REPLACE THIS TEXT WITH YOUR BIRTHDAY LETTER ***
-                                 Use <br> for line breaks!
-                            -->
-                            <p class="whitespace-pre-wrap leading-relaxed elegant-font">
-                                My Dearest Princess,<br><br>
-            
-                                Today is all about celebrating the amazing person you are and the achievements you have attained through this hole journey.From the time you came into this world as an angel,”CRYING😭” to now where you are chasing never ending goals,you have demonstrated soo much discipline and determination.Yes I know sometimes when things get tough we tend to sulk and wish we were never here but the most amazing part about you is that you always go to God during those hard times and ultimately emerge victorious.Your presence brightens up the room,your smile steals peoples breaths”KASONGO👀😂”,your voice fills hearts with warmth,especially mine💖.As we celebrate your day,I want to remind you that you always have people by your side who will always push you through the tough times.We are soo proud of you,and we will always pray for your success and victory.
-                                Now speaking as your Sweetheart,I am soo proud of you Princess for the far that you have come.The endless times e have shared things and built each other is more than magical.I want you to enjoy this day to the fullest knowing that you are loved from within and also miles away.Always remember that nomatter what we will always pray through and have victory on our side.
-                                <br><br>
-            
-                                HAVE A WONDERFUL BIRTHDAY LOVE,I LOVE YOU SOO MUCH💘💞,<br>
-            
-                               Glen Leslie
-                            </p>
-                        </div>
-            
-                        <div class="flex space-x-4">
-                            <!-- Back button to go to login (Reset) -->
-                            <button onclick="resetApp()" 
-                                    class="w-1/3 bg-gray-500 hover:bg-gray-600 text-white font-bold py-3 rounded-lg transition duration-300">
-                                Back
-                            </button>
-                            <button onclick="showStage('stage-memory-video-1')" 
-                                    class="w-2/3 bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 rounded-lg transition duration-300 transform hover:scale-[1.01] shadow-xl shadow-pink-900/50">
-                                Next
-                            </button>
-                        </div>
-                    </div>
-            
-                    <!-- STAGE 3: Memory Video 1 -->
-                    <div id="stage-memory-video-1" class="stage hidden">
-                        <h1 class="text-4xl sm:text-5xl mb-6 text-white elegant-font">Our Memory Reel</h1>
-                        <p class="text-pink-200 mb-4">A look back at our first memories together.</p>
-                        
-                        <!-- 
-                             *** IMPORTANT: Video 1 Source Updated to use GitHub relative path ***
-                             Please ensure 'video_1.mp4' is in your /assets/ folder on GitHub.
-                        -->
-                        <div class="aspect-video w-full mb-8 rounded-lg overflow-hidden shadow-xl border-2 border-pink-500">
-                            <iframe 
-                                width="100%" 
-                                height="100%" 
-                                src="./assets/video_1.mp4" 
-                                title="Our Slideshow Video" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
-                        </div>
-            
-                        <div class="flex space-x-4">
-                            <!-- Back button to go to Birthday Letter -->
-                            <button onclick="showStage('stage-birthday-letter')" 
-                                    class="w-1/3 bg-gray-500 hover:bg-gray-600 text-white font-bold py-3 rounded-lg transition duration-300">
-                                Back
-                            </button>
-                            <button id="video-1-next-button" onclick="showStage('stage-memory-video-2')" 
-                                    class="w-2/3 bg-gray-500 cursor-not-allowed text-white font-bold py-3 rounded-lg transition duration-300" disabled>
-                                Next
-                            </button>
-                        </div>
-                    </div>
-            
-                    <!-- STAGE 4: Memory Video 2 -->
-                    <div id="stage-memory-video-2" class="stage hidden">
-                        <h1 class="text-4xl sm:text-5xl mb-6 text-white elegant-font">More Moments</h1>
-                        
-                        <p class="text-pink-200 mb-4">Special message from Sweetheart...</p>
-            
-                        <!-- 
-                             *** IMPORTANT: Video 2 Source Updated to use GitHub relative path ***
-                             Please ensure 'video_2.mp4' is in your /assets/ folder on GitHub.
-                        -->
-                        <div class="aspect-video w-full mb-8 rounded-lg overflow-hidden shadow-xl border-2 border-red-500">
-                            <iframe 
-                                width="100%" 
-                                height="100%" 
-                                src="./assets/video_2.mp4" 
-                                title="Proposal Video 2" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
-                        </div>
-                        
-                        <div class="flex space-x-4">
-                            <!-- Back button to go to Memory Video 1 -->
-                            <button onclick="showStage('stage-memory-video-1')" 
-                                    class="w-1/3 bg-gray-500 hover:bg-gray-600 text-white font-bold py-3 rounded-lg transition duration-300">
-                                Back
-                            </button>
-                            <button id="video-2-final-button" onclick="showStage('stage-proposal-question')" 
-                                    class="w-2/3 bg-gray-500 cursor-not-allowed text-white font-bold py-4 rounded-lg transition duration-300 elegant-font text-xl" disabled>
-                                Final Surprise
-                            </button>
-                        </div>
-                    </div>
-            
-                    <!-- STAGE 5: Final Question and Buttons -->
-                    <div id="stage-proposal-question" class="stage hidden">
-                        <h1 class="text-4xl sm:text-5xl mb-6 text-white elegant-font">Heyy Princess</h1>
-                        
-                        <!-- Adorable Kitten Image Placeholder -->
-                        <div class="mb-6 w-full max-w-xs mx-auto overflow-hidden rounded-lg shadow-lg border-2 border-pink-500">
-                            <!-- Image Source Updated to use GitHub relative path -->
-                            <img src="./assets/kitten_image.jpeg" alt="Adorable Kitten" class="w-full h-auto object-cover">
-                        </div>
-            
-                        <p class="text-3xl sm:text-4xl mt-8 mb-6 text-pink-400 elegant-font">Will you be my girlfriend?</p>
-            
-                        <div class="flex space-x-4 justify-center" id="proposal-buttons">
-                            <!-- YES button is ready -->
-                            <button onclick="handleYesClick()" 
-                                    class="flex-1 bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105 shadow-lg shadow-green-900/50">
-                                Yes!
-                            </button>
-                            
-                            <!-- NO button flips to YES (The clever part!) -->
-                            <button id="no-button" onclick="handleNoClick()" 
-                                    class="flex-1 bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105 shadow-lg shadow-red-900/50">
-                                No
-                            </button>
-                        </div>
-                        
-                        <!-- Back button to go to Memory Video 2 -->
-                        <button onclick="showStage('stage-memory-video-2')" 
-                                class="mt-6 w-full bg-gray-500 hover:bg-gray-600 text-white font-bold py-3 rounded-lg transition duration-300">
-                            Back
-                        </button>
-                    </div>
-            
-                    <!-- STAGE 6: Final Confirmation (The Happy Ending) -->
-                    <div id="stage-final" class="stage hidden">
-                        <div class="bg-gray-900/80 border border-pink-500/50 p-8 rounded-xl shadow-2xl">
-                            <p class="text-6xl mb-4 text-pink-500">💖</p>
-                            <h1 class="text-3xl sm:text-4xl mb-4 text-pink-300 elegant-font">You've Made Me So Happy!</h1>
-                            
-                            <p class="text-pink-200 mb-6">
-                                Thank you for saying yes! We're official, and I promise to cherish every moment we share.
-                            </p>
-                            
-                            <div class="w-full max-w-sm mx-auto mb-6">
-                                <!-- Image of romantic pink rose bush -->
-                                <!-- Image Source Updated to use GitHub relative path -->
-                                <img src="./assets/rose_bush.jpeg" alt="Celebration Rose Bush" class="rounded-lg w-full h-auto object-cover border-2 border-pink-500">
-                            </div>
-            
-                            <p class="text-2xl text-yellow-400 mt-6 elegant-font">NOW LOOK UP!</p>
-                            
-                            <!-- MODIFIED: Two side-by-side buttons for Back and Reset -->
-                            <div class="flex space-x-4 mt-8">
-                                <!-- Back button to go to the proposal question -->
-                                <button onclick="showStage('stage-proposal-question')" 
-                                        class="flex-1 bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 rounded-lg transition duration-300">
-                                    Back to Question
-                                </button>
-                                <!-- CLOSE BUTTON to reset the app -->
-                                <button onclick="resetApp()" 
-                                        class="flex-1 bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 rounded-lg transition duration-300">
-                                    Close and Return to Canvas
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-            
-                </div>
-            
-                <script>
-                    // *** 1. CONFIGURATION: EDIT THESE VALUES ***
-                    
-                    // Video Timing (adjust these based on your actual video lengths)
-                    const VIDEO_1_WATCH_TIME_MS = 5000; // Time until Video 1 "Next" button appears (5 seconds)
-                    const VIDEO_2_WATCH_TIME_MS = 5000; // Time until Video 2 "Final Surprise" button appears (5 seconds)
-            
-                    // ------------------------------------------
-            
-                    const stages = [
-                        'stage-painting', 'stage-birthday-letter', 'stage-memory-video-1', 
-                        'stage-memory-video-2', 'stage-proposal-question', 'stage-final'
-                    ];
-            
-                    // --- Audio Control Setup ---
-                    const bgMusic = document.getElementById('bg-music');
-                    let musicStarted = false;
-            
-                    async function startMusic() {
-                        if (musicStarted) return;
-                        
-                        // Start playing the HTML audio element on user action
-                        try {
-                            await bgMusic.play();
-                            musicStarted = true;
-                        } catch (error) {
-                            // Handle cases where playback is prevented (e.g., sound policy, or error in URL)
-                            console.error("Audio playback prevented:", error);
-                        }
-                    }
-            
-                    // --- Falling Element Functions (Heart and Flower Rain) ---
-                    const emojis = ['💖', '🌹', '🌸', '❤️', '💐'];
-                    const container = document.getElementById('falling-container');
-            
-                    function createFallingElement() {
-                        const emoji = emojis[Math.floor(Math.random() * emojis.length)];
-                        const element = document.createElement('div');
-                        element.textContent = emoji;
-                        element.classList.add('falling-element');
-                        element.style.left = `${Math.random() * 100}vw`;
-                        element.style.fontSize = `${15 + Math.random() * 25}px`;
-                        element.style.opacity = `${0.5 + Math.random() * 0.5}`;
-                        element.style.animationDuration = `${5 + Math.random() * 8}s`; 
-                        element.style.animationDelay = `-${Math.random() * 10}s`; 
-                        container.appendChild(element);
-                        setTimeout(() => element.remove(), 14000); 
-                    }
-            
-                    function startFallingAnimation() {
-                        setInterval(createFallingElement, 400); 
-                    }
-                    
-                    // --- Reset Function ---
-                    function resetApp() {
-                        // Stop the music and rewind
-                        if (musicStarted) {
-                            bgMusic.pause();
-                            bgMusic.currentTime = 0;
-                            musicStarted = false;
-                        }
-                        
-                        // Go back to the initial login stage
-                        showStage('stage-painting');
-                        
-                        // Remove lingering classes/state if necessary (e.g., in the form)
-                        document.getElementById('signup-form').reset();
-                    }
-            
-            
-                    // --- Stage Navigation & Logic ---
-            
-                    function showStage(stageId) {
-                        stages.forEach(id => {
-                            document.getElementById(id).classList.add('hidden');
-                        });
-                        const stageElement = document.getElementById(stageId);
-                        if (stageElement) {
-                            stageElement.classList.remove('hidden');
-                            document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
-                        }
-                        
-                        // --- MUSIC CONTROL LOGIC ---
-                        const videoStages = ['stage-memory-video-1', 'stage-memory-video-2'];
-                        
-                        if (musicStarted) {
-                            if (videoStages.includes(stageId)) {
-                                // Pause music for video stages
-                                bgMusic.pause();
-                            } else {
-                                // Resume music for non-video stages (Letter, Question, Final, etc.)
-                                bgMusic.play();
-                            }
-                        }
-                        // --- END MUSIC CONTROL LOGIC ---
-            
-            
-                        // Toggle falling animation based on stage
-                        if (stageId === 'stage-painting') {
-                            container.classList.add('hidden-animation');
-                        } else {
-                            container.classList.remove('hidden-animation');
-                        }
-            
-                        // Logic for Video 1: Show "Next" button after watching time
-                        if (stageId === 'stage-memory-video-1') {
-                            const nextButton = document.getElementById('video-1-next-button');
-                            nextButton.disabled = true;
-                            nextButton.classList.add('bg-gray-500', 'cursor-not-allowed');
-                            
-                            setTimeout(() => {
-                                nextButton.disabled = false;
-                                nextButton.classList.remove('bg-gray-500', 'cursor-not-allowed');
-                                nextButton.classList.add('bg-pink-600', 'hover:bg-pink-700', 'shadow-xl', 'shadow-pink-900/50');
-                            }, VIDEO_1_WATCH_TIME_MS); 
-                        }
-                        
-                        // Logic for Video 2: Show "Final Surprise" button after watching time
-                        if (stageId === 'stage-memory-video-2') {
-                            const finalButton = document.getElementById('video-2-final-button');
-                            finalButton.disabled = true;
-                            finalButton.classList.add('bg-gray-500', 'cursor-not-allowed');
-            
-                            setTimeout(() => {
-                                finalButton.disabled = false;
-                                finalButton.classList.remove('bg-gray-500', 'cursor-not-allowed');
-                                finalButton.classList.add('bg-purple-600', 'hover:bg-purple-700', 'shadow-xl', 'shadow-purple-900/50');
-                            }, VIDEO_2_WATCH_TIME_MS);
-                        }
-                    }
-                    
-                    // Handles the Rose Transition after "Sign Up"
-                    function triggerRoseTransition() {
-                        startMusic(); // START MUSIC ON FIRST USER INTERACTION
-                        const roseTransition = document.getElementById('rose-transition');
-                        roseTransition.classList.add('active'); 
-                        
-                        setTimeout(() => {
-                            roseTransition.style.display = 'none'; 
-                            showStage('stage-birthday-letter'); // Transition to the new birthday letter stage
-                        }, 3000);
-                    }
-            
-                    // Handles the clever 'No' button logic (flips to Yes)
-                    function handleNoClick() {
-                        const noButton = document.getElementById('no-button');
-                        
-                        noButton.textContent = "Yes!";
-                        noButton.classList.remove('bg-red-600', 'hover:bg-red-700', 'shadow-red-900/50');
-                        noButton.classList.add('bg-green-600', 'hover:bg-green-700', 'shadow-green-900/50');
-            
-                        noButton.onclick = null;
-                        noButton.disabled = true;
-            
-                        setTimeout(() => {
-                            handleYesClick();
-                        }, 500);
-                    }
-            
-                    // Handles the 'Yes' button logic (moves to final stage)
-                    function handleYesClick() {
-                        document.querySelectorAll('#proposal-buttons button').forEach(btn => {
-                            btn.disabled = true;
-                        });
-            
-                        showStage('stage-final');
-                    }
-            
-                    // Initialize the app
-                    document.addEventListener('DOMContentLoaded', () => {
-                        startFallingAnimation(); 
-                        showStage('stage-painting');
-                    });
-            
-                </script>
-            </body>
-            </html>
+            <p class="text-pink-200 mb-4">Special message from Sweetheart...</p>
 
             <!-- 
-                 *** IMPORTANT: REPLACE THE 'src' URL BELOW WITH YOUR ACTUAL SECOND VIDEO LINK (Video 2) ***
+                 *** FILE PATH CORRECTED: Must be hosted in ./assets/ folder on GitHub ***
             -->
             <div class="aspect-video w-full mb-8 rounded-lg overflow-hidden shadow-xl border-2 border-red-500">
                 <iframe 
                     width="100%" 
                     height="100%" 
-                    src="https://www.youtube.com/embed/09R8_2nJhrg?controls=0" 
+                    src="C:\Users\Glen Leslie\Desktop\Princess birthday surprise\assets\WhatsApp Video 2025-12-17 at 12.53.14 AM.mp4"
                     title="Proposal Video 2" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -743,8 +246,8 @@
             
             <!-- Adorable Kitten Image Placeholder -->
             <div class="mb-6 w-full max-w-xs mx-auto overflow-hidden rounded-lg shadow-lg border-2 border-pink-500">
-                <!-- NOTE: Local file paths like 'C:\Users\...' will NOT work when hosted online. Please use a public URL. -->
-                <img src="C:\Users\Glen Leslie\Desktop\Princess birthday surprise\WhatsApp Image 2025-12-16 at 9.34.35 PM.jpeg" alt="Adorable Kitten" class="w-full h-auto object-cover">
+                <!-- FILE PATH CORRECTED: Must be hosted in ./assets/ folder on GitHub -->
+                <img src="C:\Users\Glen Leslie\Desktop\Princess birthday surprise\assets\WhatsApp Image 2025-12-16 at 9.34.35 PM.jpeg" alt="Adorable Kitten" class="w-full h-auto object-cover">
             </div>
 
             <p class="text-3xl sm:text-4xl mt-8 mb-6 text-pink-400 elegant-font">Will you be my girlfriend?</p>
@@ -774,19 +277,19 @@
         <div id="stage-final" class="stage hidden">
             <div class="bg-gray-900/80 border border-pink-500/50 p-8 rounded-xl shadow-2xl">
                 <p class="text-6xl mb-4 text-pink-500">💖</p>
-                <h1 class="text-3xl sm:text-4xl mb-4 text-pink-300 elegant-font">You've Made Me So Happy!</h1>
+                <h1 class="text-3xl sm:text-4xl mb-4 text-pink-300 elegant-font">My heart is filled with infinite joy 😭!</h1>
                 
                 <p class="text-pink-200 mb-6">
-                    Thank you for saying yes! We're official, and I promise to cherish every moment we share.
+                    I really appreciate you for starting this wonderful journey with me and I promise to cherish every moment we share and continue building each other as we always do.
                 </p>
                 
                 <div class="w-full max-w-sm mx-auto mb-6">
                     <!-- Image of romantic pink rose bush -->
-                    <!-- NOTE: Local file paths like 'C:\Users\...' will NOT work when hosted online. Please use a public URL. -->
-                    <img src="C:\Users\Glen Leslie\Desktop\Princess birthday surprise\WhatsApp Image 2025-12-16 at 9.34.57 PM.jpeg" alt="Celebration Rose Bush" class="rounded-lg w-full h-auto object-cover border-2 border-pink-500">
+                    <!-- FILE PATH CORRECTED: Must be hosted in ./assets/ folder on GitHub -->
+                    <img src="C:\Users\Glen Leslie\Desktop\Princess birthday surprise\assets\WhatsApp Image 2025-12-16 at 9.34.57 PM.jpeg" alt="Celebration Rose Bush" class="rounded-lg w-full h-auto object-cover border-2 border-pink-500">
                 </div>
 
-                <p class="text-2xl text-yellow-400 mt-6 elegant-font">NOW LOOK UP!</p>
+                <p class="text-2xl text-yellow-400 mt-6 elegant-font">I love you soo much💘💞!</p>
                 
                 <!-- MODIFIED: Two side-by-side buttons for Back and Reset -->
                 <div class="flex space-x-4 mt-8">
@@ -887,7 +390,19 @@
                 stageElement.classList.remove('hidden');
                 document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
             }
-            
+            // --- FIX APPLIED: Re-enable proposal buttons when navigating back to the question ---
+            if (stageId === 'stage-proposal-question') {
+                const proposalButtons = document.querySelectorAll('#proposal-buttons button');
+                proposalButtons.forEach(btn => {
+                    btn.disabled = false; // <-- This line re-enables the buttons
+                });
+                // Reset the "No" button text/style if it was flipped
+                const noButton = document.getElementById('no-button');
+                noButton.textContent = "No";
+                noButton.classList.remove('bg-green-600', 'hover:bg-green-700', 'shadow-green-900/50');
+                noButton.classList.add('bg-red-600', 'hover:bg-red-700', 'shadow-red-900/50');
+                noButton.onclick = handleNoClick; // Restore original click handler
+            }
             // --- MUSIC CONTROL LOGIC ---
             const videoStages = ['stage-memory-video-1', 'stage-memory-video-2'];
             
